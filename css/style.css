@@ -1,5 +1,9 @@
-
-
+body{
+	margin-top: 50px;
+}
+.navbar-default{
+	background-color:#f8f8f8c7;
+}
 .about_us{background:#ffffff;}
 /*合作机构*/
 .cooperation{background:#ededed;padding:40px 0;min-width:1080px;margin:0 auto;}
@@ -51,7 +55,7 @@
 .wechat_list .wechat_offical{position:absolute;top:21px;left:374px;}
 .wechat_list .wechat_personal{position:absolute;top:21px;left:570px;}
 .offical_img img,.personal_img img{width:100%;height:100%;}
-.footer_tele{position:absolute;bottom:15px;left:0;width:270px;}
+.footer_tele{position:absolute;bottom:15px;left:30px;width:270px;}
 .footer_tele a{cursor:pointer;font-size:40px;font-style:italic;color:#4da422;}
 @media (max-width:1080px) {
 	.warp,.banner,.banner ul,.footer,.icase,.foot-copyright,.news,.service,.contact-box,.about_us,.product,.immi_item{width:1080px !important;}
