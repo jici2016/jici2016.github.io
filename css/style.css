@@ -1,0 +1,59 @@
+
+
+.about_us{background:#ffffff;}
+/*合作机构*/
+.cooperation{background:#ededed;padding:40px 0;min-width:1080px;margin:0 auto;}
+.cooperation img{height:100%;width:100%;}
+.cooperation a{display:inline-block;margin:5px 5px;height:38px;width:123px;text-align:center;}
+.cooperation strong{height:100%;font-size:18px;color:#464646;font-weight:normal;}
+
+/*客服*/
+#suspend {position:fixed;right:0;top:30%;z-index:9995;}
+#suspend li {width:60px;height:60px;margin:5px 0;background-image:url(../images/suspend.png);background-repeat:no-repeat;cursor:pointer;position:relative;}
+#suspend li.sr_contact {background-position:0 -70px;}
+#suspend li.sr_up {background-position:0 bottom;}
+#suspend li.sr_tel {background-position:0 0;}
+#suspend li span {padding:10px 0;line-height:20px;text-align:center;color:#fff;font-size:16px;display:none;}
+#suspend li:hover span{display:block;}
+#suspend li.sr_contact span {background:#7fc15d;}
+#suspend li.sr_tel span {background:#51befc;}
+#suspend li.sr_up span {background:#ffb400;}
+#suspend .sr_bd {position:absolute;right:60px;top:0;padding-right:20px;cursor:default;display:none;}
+#suspend li:hover .sr_bd{display:block;}
+.sr_contact .sr_bd,
+.sr_tel .sr_bd{width:110px;height:142px;text-align:center;background:url('../images/suspend_bg.png') no-repeat -130px top;border-left:1px solid #f0f0f0;text-align:center;}
+.sr_bd h4 {height:30px;line-height:30px;font-size:12px;font-weight:400;overflow:hidden;}
+.sr_bd img {width:65px;}
+
+
+.footer{width:100%;background:#222222;padding:20px 0;position:relative;}
+.footer ul{ float:left;text-align:left;line-height:28px;}
+.footer ul li{clear:both;cursor:pointer;}
+.footer ul h2{font-size:16px;color:#fff;margin-bottom:10px;margin-top:20px;}
+.footer ul.contact h2{color:#4da422;}
+.footer ul a{color:#8e8e8e;font-size:14px;}
+.footer ul a:hover{color:#4da422;}
+.footer ul.list{width:180px;}
+.footer ul.contact{width:230px;float:right;position:relative;margin:0;padding:0;}
+.footer ul li i.fa{margin-left:5px;width:20px;}
+.foot-copyright{width:100%;background:#101010;line-height:25px;padding:10px 0;}
+.foot-copyright .warp{position:relative;} 
+.foot-copyright p{margin:0;padding:0;text-align:center;color:#8e8e8e;font-size:14px;line-height:25px;}
+.foot-copyright a{text-decoration:none;color:#8e8e8e;}
+.foot-copyright a:hover{text-decoration:underline;color:#4da422;}
+.f_imgs{position:absolute;left:0;top:0;}
+.f_imgs a{margin-right: 20px;float: left;}
+.f_imgs img {height:30px;margin-top:10px;}
+.wechat_list{width:400px;height:200px;}
+.wechat_list li{width:130px;height:180px;text-align:center;}
+.wechat_list span{color:#8e8e8e;font-size:14px;}
+.wechat_list>li>div{width:130px;height:130px;}
+.wechat_list .wechat_offical{position:absolute;top:21px;left:374px;}
+.wechat_list .wechat_personal{position:absolute;top:21px;left:570px;}
+.offical_img img,.personal_img img{width:100%;height:100%;}
+.footer_tele{position:absolute;bottom:15px;left:0;width:270px;}
+.footer_tele a{cursor:pointer;font-size:40px;font-style:italic;color:#4da422;}
+@media (max-width:1080px) {
+	.warp,.banner,.banner ul,.footer,.icase,.foot-copyright,.news,.service,.contact-box,.about_us,.product,.immi_item{width:1080px !important;}
+}
+

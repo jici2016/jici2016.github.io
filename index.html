@@ -2,33 +2,90 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Bootstrap 实例 - 轮播（Carousel）插件方法</title>
+    <title>济州爱旅行社</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
 </head>
-<style>
-   a{
-   	text-decoration: none;
-   }
-   
-   .mainmenu .col-md-6{
-   	padding-left: 10px;
-   	padding-right: 10px;
-   }
-   .mainmenu img{
-   	height: 600px;
-   	width: 600px;
-   }
-   
-</style>
-<script>
- $(document).ready(function(){
- $('#myCarousel').carousel({interval:2000});//每隔2秒自动轮播
- });
- </script>
 
+<body>
+ <!--导航条-->
+  	<nav class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  	<!--<div class="container-fluid">-->
+    <div class="navbar-header">
+    	<button type="button" class="navbar-toggle " data-toggle="collapse"
+                data-target="#example-navbar-collapse">
+            <span class="sr-only">切换导航</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+       
+        <a class="navbar-brand" href="#">
+						<b>济州爱旅行社</b>
+						<!--<img alt="Brand" style="max-width:100px;margin-top:-7px;" src="img/0 (1).jpg">-->
+        </a>
+        <!--<a href="#" class="navbar-left"><img src="img/0 (1).jpg" style="max-width: 70px;"></a>-->
+    </div>
+    <!--导航栏-->
+    <div>
+        <ul class="nav navbar-nav collapse navbar-collapse  " id="example-navbar-collapse">
+           
+                       
+            <li class=" dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    		私人订制
+                   <!-- <b class="caret"></b>-->
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#"></a></li>
+                    <li><a href="https://mp.weixin.qq.com/s/cyHs6wKEMyTlobJIK18Ibw">租车包车</a></li>
+                    <li><a href="https://mp.weixin.qq.com/s/Qmh7LXLfKx5l0FoO97XS-A">国际驾照</a></li>
+                    <!--<li class="divider"></li>-->
+                    <li><a href="https://mp.weixin.qq.com/s/F5bxrTolivn_DbXERG8T7Q">梦想大厦</a></li>
+<!--                    <li class="divider"></li>-->
+                    <li><a href="https://mp.weixin.qq.com/s/eht16dSg9YGAdkRmaBf-Sg">雅顿山庄</a></li>
+                    <li><a href="https://mp.weixin.qq.com/s/DS9qX0X6NPG6_1K0G3gHbg">私人管家</a></li>
+                </ul>
+            </li>
+            
+            <li class=" dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    		玩转济州
+                   <!-- <b class="caret"></b>-->
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="https://mp.weixin.qq.com/s/TOnDQUQtm3g85GH1zW9ahw">高球定制 <span class="badge"></span></a></li>
+                    <li><a href="https://mp.weixin.qq.com/s/TGfY_yIafMD92epAVuUVHg">特惠狂欢 <span class="badge ">hot</span></a></li>
+                    <li><a href="https://mp.weixin.qq.com/s/hLApDCcSbcTjApX3Bd93bA">韩服体验</a></li>
+<!--                    <li class="divider"></li>-->
+                    <li><a href="https://mp.weixin.qq.com/s/slKrmrzsT29gYU8sICAZCA">导航电话</a></li>
+                    <li><a href="https://mp.weixin.qq.com/s/ciZF2WM8USULNZZJxG0avQ">用户体验</a></li>
+                </ul>
+            </li>
+            
+            <li class=" dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    		联系我们
+                   <!-- <b class="caret"></b>-->
+                  
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="https://mp.weixin.qq.com/s/wYcyzth0tKNKpGgA_ffjkA">代购合作</a></li>
+                    <li><a href="https://mp.weixin.qq.com/s/wYcyzth0tKNKpGgA_ffjkA">商务合作</a></li>
+                    <li><a href="#">订单查询</a></li>
+                    <!--<li class="divider"></li>-->
+                    <li><a href="https://mp.weixin.qq.com/s/wYcyzth0tKNKpGgA_ffjkA">有问必答</a></li>
+<!--                    <li class="divider"></li>-->
+                    <li><a href="https://mp.weixin.qq.com/s/wYcyzth0tKNKpGgA_ffjkA">微信客服</a></li>
+                </ul>
+            </li>
+            
+                      
+        </ul>
+    </div>
 
+</nav>
 <div id="myCarousel" class="carousel slide">
     <!-- 轮播（Carousel）指标 -->
     <ol class="carousel-indicators">
@@ -44,29 +101,29 @@
     <!-- 轮播（Carousel）项目 -->
     <div class="carousel-inner" >
      <div class="item active">
-            <!--<img src="./images/订制22.jpg" style="min-width:100%;height:300px" alt="First slide">-->
-            <!--	 <img src="./images/车巴巴-暂无数据.png"  style="background-color:gray;min-width:100%;" alt="First slide">-->
-            <img   style="background-color:gray;min-width:100%;height:300px" alt="First slide">
-            
+           
+           <a href="https://mp.weixin.qq.com/s/F5bxrTolivn_DbXERG8T7Q">
+           <img   style="background-color:gray;min-width:100%;height:300px" alt="First slide" src="images/1.jpg">
+            </a>
         </div>
         <div class="item">
          <!--   <img src="./images/济州梦想大厦.jpg" style="min-width:100%;" alt="Second slide">-->
-        <img   style="background-color:gray;min-width:100%;height:300px" alt="Second slide">
+        <img   style="background-color:gray;min-width:100%;height:300px" alt="Second slide" src="images/b1.jpg">
             
         </div>
         <div class="item">
           <!--  <img src="./images/济州梦想大厦.jpg" style="min-width:100%;" alt="Third slide"> -->
-       <img   style="background-color:gray;min-width:100%;height:300px" alt="Third slide">
+       <img   style="background-color:gray;min-width:100%;height:300px" alt="Third slide" src="images/b2.jpg">
             
         </div>
            <div class="item">
          <!--   <img src="./images/济州梦想大厦.jpg" style="min-width:100%;" alt="Second slide">-->
-        <img   style="background-color:gray;min-width:100%;height:300px" alt="Four slide">
+        <img   style="background-color:gray;min-width:100%;height:300px" alt="Four slide" src="images/b3.jpg">
             
         </div>
            <div class="item">
          <!--   <img src="./images/济州梦想大厦.jpg" style="min-width:100%;" alt="Second slide">-->
-        <img   style="background-color:gray;min-width:100%;height:300px" alt="Five slide">
+        <img   style="background-color:gray;min-width:100%;height:300px" alt="Five slide" src="images/b4.jpg">
             
         </div>
     </div>
@@ -91,7 +148,7 @@
     <div class="col-md-6">
         <!-- 租车包车-->
         <a href="https://mp.weixin.qq.com/s/cyHs6wKEMyTlobJIK18Ibw" class="thumbnail">
-        <img src="./images/yangshi.jpg"   alt="通用的占位符缩略图">
+        <img class="img-thumbnail" src="./images/订制.jpg"   alt="通用的占位符缩略图">
         </a>
     </div>
     <div class="col-md-6">
@@ -105,7 +162,7 @@
     <div class="col-md-6">
         <!--雅顿山庄度假村-->
         <a href="https://mp.weixin.qq.com/s/eht16dSg9YGAdkRmaBf-Sg" class="thumbnail">
-            <img src="./images/雅顿山庄度假村.jpg"   alt="通用的占位符缩略图">
+            <img src="./images/yadunshanzhuang.jpg"   alt="通用的占位符缩略图">
         </a>
     </div>
     <div class="col-md-6">
@@ -133,15 +190,15 @@
 
 <div class="row mainmenu">
     <div class="col-md-6">
-        <!--婚纱摄影-->
-        <a href="https://mp.weixin.qq.com/s?__biz=MjM5NTI2NTYzNg==&tempkey=OTY3X2JpT0xQaXh0b1J4UFVwRWY2Z0xxQ1dNeGk2cFM2MkU2S2tHbE5pVExMbmszb1F2SURGT2g2WDBCMW45VDhTdTFjTzEyNnFuNkk4U1Zvdmd6bWlIZTZ2OTFiLVhYX3ZkTUszMVhmZWIwTkhIYmRQM3ZLMllnUlAxQmVIX190dk42WDRIYWVMVHMwaFI0ajRySGpKRm1WMVNkOXU1bGo5V0Y2OWNNcEF%2Bfg%3D%3D&chksm=3eea48e0099dc1f64e9d7be849406d01a5de128818cb1a8a0364d0f2418cb48d2e578997328c#rd" class="thumbnail">
-            <img src="./images/hunli.jpg"   alt="通用的占位符缩略图">
+        <!--导航-->
+        <a href="https://mp.weixin.qq.com/s/slKrmrzsT29gYU8sICAZCA" class="thumbnail">
+            <img src="./images/daohang.jpg"   alt="通用的占位符缩略图">
         </a>
     </div>
     <div class="col-md-6">
         <!--韩服体验-->
-        <a href="https://mp.weixin.qq.com/s?__biz=MjM5NTI2NTYzNg==&tempkey=OTY3XzNUVnBuMUNZS1hNTHFpNTY2Z0xxQ1dNeGk2cFM2MkU2S2tHbE5pVExMbmszb1F2SURGT2g2WDBCMW4td2I4SHJLYUR1MS16VjRFUnIwU28xYUN6NnFyODFhZEJWbGh0LU1VbnNRa0FGaDcwTkVBRlBZZzRfdEpHcU1FZ0hvNkdUWHNKOEVaRUNMbzVtbk1vam5DU3ZRRUt6OTF3b1NpaExleEhJdnd%2Bfg%3D%3D&chksm=3eea4804099dc11299f5347f8e7de6fd97f910641a8f2ecc41e9b13e99439fede3204cfce3ac#rd" class="thumbnail">
-            <img src="./images/韩服体验.jpg" alt="通用的占位符缩略图">
+        <a href="https://mp.weixin.qq.com/s/hLApDCcSbcTjApX3Bd93bA" class="thumbnail">
+            <img src="./images/hunli.jpg" alt="通用的占位符缩略图">
         </a>
     </div>
 </div>
@@ -213,35 +270,128 @@
     </div>
 </div>
 -->
-<div class="row navbar navbar-default">
-    <div class="col-md-7" style="text-align: center;">
-        <ul class="list-inline">
-        	<li>
-		        <a href="https://mp.weixin.qq.com/s?__biz=MjM5NTI2NTYzNg==&tempkey=OTY3X3h6ZUR1Mnh2dGdiVmFXeXM2Z0xxQ1dNeGk2cFM2MkU2S2tHbE5pVExMbmszb1F2SURGT2g2WDBCMW5fYVNuS204cUVWUjEwd2NEMGR1V1pHNWQxLUVOM1c2b191S1dJa0s1VTB3UUJIYVFWNjNjNWtvUWtETlBzS3dzYkR3VG83QmJjM0tPNVg0dk1TeGVUUDl4Zk1ucE1Za0FsblZGTEZWZ2JYbnd%2Bfg%3D%3D&chksm=3eea4806099dc1104648ae45b4b2da17cebdd2c519f661359efcc8bbf4012dd2d2ef114fd342#rd" class="thumbnail">
-					<img src="./images/二维码.jpg" alt="通用的占位符缩略图">
-					<p style="text-align: center;">官方微信</p>
-				</a>
+
+
+<div class="footer">
+    <div class="warp" style="position: relative;">
+        <ul class="list">
+            <li><h2>关于</h2></li>
+            <li><a href="https://mp.weixin.qq.com/s/wYcyzth0tKNKpGgA_ffjkA" title="关于我们">关于我们</a></li>
+            <li><a href="https://mp.weixin.qq.com/s/ciZF2WM8USULNZZJxG0avQ" title="旅游须知">旅游须知</a></li>
+            <li><a href="#" title="济州资讯">济州资讯</a></li>
+        </ul>
+        <ul class="list">
+            <li><h2>旅行案例</h2></li>
+            <li><a href="#" title="当天速批">当天速批</a></li>
+        </ul>
+      	<ul class="wechat_list">
+        	<li class="wechat_offical">
+        		<div class="offical_img"><img src="images/二维码.jpg" alt=""/></div>
+        		<span>官方微信</span>
         	</li>
-        	<li>
-		        <a href="https://mp.weixin.qq.com/s?__biz=MjM5NTI2NTYzNg==&tempkey=OTY3X3h6ZUR1Mnh2dGdiVmFXeXM2Z0xxQ1dNeGk2cFM2MkU2S2tHbE5pVExMbmszb1F2SURGT2g2WDBCMW5fYVNuS204cUVWUjEwd2NEMGR1V1pHNWQxLUVOM1c2b191S1dJa0s1VTB3UUJIYVFWNjNjNWtvUWtETlBzS3dzYkR3VG83QmJjM0tPNVg0dk1TeGVUUDl4Zk1ucE1Za0FsblZGTEZWZ2JYbnd%2Bfg%3D%3D&chksm=3eea4806099dc1104648ae45b4b2da17cebdd2c519f661359efcc8bbf4012dd2d2ef114fd342#rd" class="thumbnail">
-					<img src="./images/二维码.jpg" alt="通用的占位符缩略图">
-					<p style="text-align: center;">官方微信</p>
-				</a>
+        	<li class="wechat_personal">
+        		<div class="personal_img"><img src="images/cyxwx.jpg" alt=""/></div>
+        		<span>扫码咨询</span>
         	</li>
         </ul>
-        
-       
-    </div>
-    <div class="col-md-5" style="background:gray;">
-        <p style="text-align: center;color:blue;" >中国电话：*#####</p>
-          <p style="text-align: center;color:blue;">韩国电话：*#####</p>
-             <p style="text-align: center;color:blue;" >中国邮箱：*#####</p>
-          <p style="text-align: center;color:blue;">韩国邮箱：*#####</p>
-             <p style="text-align: center;color:blue;" >微信号：*#####</p>
-          <p style="text-align: center;color:blue;">QQ邮箱：*#####</p>
-          
+        <ul class="contact">
+            <li><h2>联系我们</h2></li>
+            <li><a title="中国：15585561683"><i class="fa fa-phone"></i>中国：15585561683</a></li>
+            <li><a href="mailto:cuiyongxun@gmail.com " title="邮件" target="_blank"><i class="fa fa-envelope"></i>邮箱：cuiyongxun@gmail.com </a></li>
+            <li><a href="http://wpa.qq.com/msgrd?v=3&uin=793688566&site=qq&menu=yes" title="qq" target="_blank"><i class="fa fa-qq"></i>Q Q：793688566</a></li>
+            <li><a title="联系微信号"><i class="fa fa-wechat"></i>微信：zhizunzaixian</a></li>
+        </ul>
+        <div class="footer_tele">
+        	<a  title="客服：18253919828">18253919828</a>
+        </div>
+        <div class="clearfix"></div>
     </div>
 </div>
+<div class="foot-copyright">
+	<div class="warp">
+		<div class="f_imgs">
+	        <!--<a rel="nofollow" href="#" target="_blank"><img src="/public/images/t0.gif"></a>   
+	        <a rel="nofollow" href="#" target="_blank"><img src="/public/images/t3.gif.png"></a>  -->
+	    </div>
+		<p>地址：xxxx </p>
+		<p>ICP备案证书号：<a href="http://www.miibeian.gov.cn/" target="_blank">ICP备xxxxxx号-x</a> </p>
+	</div>	
+</div>
+<div id="suspend">
+	<ul class="list-unstyled">
+        <li class="sr_contact">
+            <span>在线<br>客服</span>
+            <div class="sr_bd">
+                <h4><a href="http://wpa.qq.com/msgrd?v=3&uin=793688566&site=qq&menu=yes" target="_blank">联系QQ客服</a></h4>
+                <a href="http://wpa.qq.com/msgrd?v=3&uin=793688566&site=qq&menu=yes" target="_blank"><img src="images/qq.jpg" alt=""></a>
+            </div>
+        </li>
+        <li class="sr_tel">
+            <span>在线<br>电话</span>
+            <div class="sr_bd">
+                <h4>18253919828</h4>
+               <img src="images/tel.jpg" alt="">
+            </div>
+        </li>
+        <li class="sr_up" id="back-to-top"><a href="#myCarousel"><span>返回<br>顶部</span></a></li>
+    </ul>
+</div>	
+
+
+<script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+ <script type="text/javascript">
+    	$(function() {
+				$(".dropdown").mouseover(function() {
+					$(this).addClass("open");
+				});
+			
+				$(".dropdown").mouseleave(function() {
+					$(this).removeClass("open");
+				})
+				var car = $(".carousel-control");
+				car.hide();
+				$("#carousel-example-generic").mouseover(function(){
+					car.show();//.setVisible(true);
+				})
+				$("#carousel-example-generic").mouseleave(function(){
+					car.hide();//.setVisible(true);
+				})
+				
+			})
+    </script>
+<style>
+   a{
+   	text-decoration: none;
+   	outline: none;
+   }
+   a:hover{text-decoration:none;color:#4da422;}
+	a:focus {outline: none;}
+   
+   .mainmenu .col-md-6{
+   	/*border: dashed 5px seagreen;*/
+   	/*padding-left: 20px;*/
+   	text-align: center;
+   }
+   .mainmenu img{
+   	/*padding: 10px;*/
+   	height: 600px;
+   	width: 600px;
+   }
+   .wximg{
+   	height: 50%;
+   	width: 50%;
+   }
+   
+</style>
+<script>
+ $(document).ready(function(){
+ $('#myCarousel').carousel({interval:2000});//每隔2秒自动轮播
+ });
+ 
+ 
+ </script>
 
 </body>
 </html>
