@@ -71,7 +71,7 @@ a:hover{text-decoration:none; color:#4da422;}
 .house_d li a{overflow:hidden;}
 .house_list li{}
 .house_title{height: 40px; color:darkblue;text-shadow:1px 1px 5px yellowgreen;}
-.srdz_title{height: 40px;color: black; font-size: smaller;}
+.srdz_title{height: 40px;color: black; font-size: larger;}
 .house_li_info{position:relative;height:110px;overflow:hidden;}
 .house_desc{font-size:x-small; color: #999; margin-top: 7px;}
 
