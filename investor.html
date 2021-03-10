@@ -144,6 +144,38 @@
      </div>
  </div>
  -->
+    <!--    留言框-->
+    <div class="float_layer" id="miaov_float_layer">
+        <h2>
+            <strong>请您留言</strong>
+            <a id="btn_min" href="javascript:;" class="min"></a>
+            <a id="btn_close" href="javascript:;" class="close"></a>
+        </h2>
+        <div class="content">
+            <div class="wrap">
+                <strong>济州爱旅行社</strong>
+                <p><small>微信：jejusaramg</small></p>
+                <form>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="请在此输入留言内容，我们会尽快与您联系。（必填）" ></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group">
+                            <span class="input-group-addon" >👤</span>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="姓名" autofocus>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <div class="input-group">
+                            <span class="input-group-addon">☎</span>
+                            <input type="tel" class="form-control" id="password" name="password" placeholder="电话(必填)">
+                        </div>
+                    </div>
+                    <button class="form-control btn btn-primary">发 送</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
     <div class="footer_d">
@@ -195,10 +227,45 @@
         <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
         document.write(unescape("%3Cspan id='cnzz_stat_icon_1274341297'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s13.cnzz.com/z_stat.php%3Fid%3D1274341297%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));</script>
     </div>
-
+    <script>
+        window.onload = function () {
+            var oDiv = document.getElementById('miaov_float_layer');
+            var oBtnMin = document.getElementById('btn_min');
+            var oBtnClose = document.getElementById('btn_close');
+            var oDivContent = oDiv.getElementsByTagName('div')[0];
+            var iMaxHeight = 0;
+            var isIE6 = window.navigator.userAgent.match(/MSIE 6/ig) && !window.navigator.userAgent.match(/MSIE 7|8/ig);
+            oDiv.style.display = 'block';
+            iMaxHeight = oDivContent.offsetHeight;
+            if (isIE6) {
+                oDiv.style.position = 'absolute';
+                repositionAbsolute();
+                miaovAddEvent(window, 'scroll', repositionAbsolute);
+                miaovAddEvent(window, 'resize', repositionAbsolute);
+            } else {
+                oDiv.style.position = 'fixed';
+                repositionFixed();
+                miaovAddEvent(window, 'resize', repositionFixed);
+            }
+            oBtnMin.timer = null;
+            oBtnMin.isMax = true;
+            oBtnMin.onclick = function () {
+                startMove
+                (
+                    oDivContent, (this.isMax = !this.isMax) ? iMaxHeight : 0,
+                    function () {
+                        oBtnMin.className = oBtnMin.className == 'min' ? 'max' : 'min';
+                    }
+                );
+            };
+            oBtnClose.onclick = function () {
+                oDiv.style.display = 'none';
+            };
+        };
+    </script>
     <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
+    <script src="js/ad.js" ></script>
     <script type="text/javascript">
         $(function () {
 

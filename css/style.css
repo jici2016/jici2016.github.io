@@ -186,6 +186,23 @@ a:hover{text-decoration:none; color:#4da422;}
 .r_con img{max-width:100%;}
 .ym_title{background-color: white; padding: 10px;}
 .ym_info{background-color: white; padding: 10px; color: #999;}
+/*广告条*/
+.float_layer { width: 300px; border: 1px solid #aaaaaa; display:none; background: #fff; }
+.float_layer h2 { margin-top: 0; height: 25px; line-height: 25px; padding-left: 10px; font-size: 14px; color: #333; background: url(../images/title_bg.gif) repeat-x; border-bottom: 1px solid #aaaaaa; position: relative; }
+.float_layer .min { width: 21px; height: 20px; background: url(../images/min.gif) no-repeat 0 bottom; position: absolute; top: 2px; right: 25px; }
+.float_layer .min:hover { background: url(../images/min.gif) no-repeat 0 0; }
+.float_layer .max { width: 21px; height: 20px; background: url(../images/max.gif) no-repeat 0 bottom; position: absolute; top: 2px; right: 25px; }
+.float_layer .max:hover { background: url(../images/max.gif) no-repeat 0 0; }
+.float_layer .close { width: 21px; height: 20px; background: url(../images/close.gif) no-repeat 0 bottom; position: absolute; top: 2px; right: 3px; }
+.float_layer .close:hover { background: url(../images/close.gif) no-repeat 0 0; }
+.float_layer .content { height: 260px; overflow: hidden; font-size: 14px; line-height: 18px; color: #666; text-indent: 28px; }
+.float_layer .wrap { padding: 10px; }
+/*.float_layer input { margin-left: 50px;width: 80%;}*/
+/*.float_layer input::-ms-input-placeholder{text-align: center;}*/
+/*.float_layer input::-webkit-input-placeholder{text-align: center;}*/
+.float_layer  .form-control-feedback{
+    right:10px;
+}
 @media (min-width:768px) {
 .house_li_info{height:240px;}
 .house_d li p{line-height:240px;}
